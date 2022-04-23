@@ -8,8 +8,8 @@ void main() {
 @Openapi(
     additionalProperties:
         DioProperties(pubName: 'petstore_api', pubAuthor: 'Johnny dep.'),
-    // inputSpecFile: 'openapi-spec.yaml',
-    apiPackage: "https://jsonplaceholder.typicode.com/todos",
+    inputSpecFile: 'openapi-spec.yaml',
+    // apiPackage: "https://jsonplaceholder.typicode.com/todos",
     generatorName: Generator.dioNext,
     outputDirectory: 'api/gen')
 class MyApp extends StatelessWidget {
